@@ -1,5 +1,5 @@
 import React from "react";
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import { createHashRouter, RouterProvider } from "react-router-dom";
 
 import Nav from "./Component/NavBarre/Nav";
 import HomePage from "./Pages/Home/HomePage";
@@ -11,7 +11,7 @@ import PrivacyPolicy from "./Pages/FooterLinks/PrivacyPolicy/PrivacyPolicy";
 import License from "./Pages/FooterLinks/License/License";
 import Partnerships from "./Pages/FooterLinks/Partnerships/Partnerships";
 
-const router = createBrowserRouter([
+const router = createHashRouter([
   {
     path: "/",
     element: <Nav />,
