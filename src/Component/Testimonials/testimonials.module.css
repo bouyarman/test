@@ -1,0 +1,24 @@
+.testimonialsContent {
+  position: relative;
+  height: 50rem;
+}
+.testimonialsContent article {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: transform 0.3s;
+}
+
+/********** 454px **********/
+@media (max-width: 28.375em) {
+  .testimonialsContent {
+    height: 42rem;
+  }
+}
+
+/********** 430px **********/
+@media (max-width: 26.875em) {
+  .testimonialsContent {
+    height: 34rem;
+  }
+}

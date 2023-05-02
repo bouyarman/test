@@ -1,0 +1,76 @@
+.linkItem {
+  list-style: none;
+  display: flex;
+  gap: 4rem;
+}
+
+.linkItem ion-icon {
+  font-size: 2.4rem;
+}
+.linkItem a {
+  text-decoration: none;
+  font-size: 2.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.2rem;
+  color: white;
+  position: relative;
+  transition: all 0.3s;
+}
+
+.linkItem a::before {
+  content: "";
+  transform: scaleX(0);
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: currentColor;
+  bottom: -2px;
+  left: 0;
+  transform-origin: right;
+  transition: transform 0.3s ease-in-out;
+}
+
+.linkItem a.active::before,
+.linkItem a:hover::before {
+  transform-origin: left;
+  color: currentColor;
+  transform: scaleX(1);
+}
+
+/********** 1680px **********/
+@media (max-width: 105em) {
+  .linkItem a {
+    font-size: 2rem;
+  }
+}
+
+/********** 1500px **********/
+@media (max-width: 93.75em) {
+  .linkItem a {
+    font-size: 2.4rem;
+  }
+}
+
+/********** 1100px **********/
+@media (max-width: 68.75em) {
+  .linkItem a {
+    font-size: 2.2rem;
+  }
+}
+
+/********** 1000px **********/
+@media (max-width: 62.5em) {
+  .linkItem {
+    flex-direction: column;
+  }
+  .linkItem a {
+    font-size: 3.6rem;
+    gap: 1.6rem;
+    justify-content: start;
+  }
+  .linkItem ion-icon {
+    font-size: 3.6rem;
+  }
+}

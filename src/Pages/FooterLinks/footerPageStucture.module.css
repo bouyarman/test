@@ -1,0 +1,113 @@
+.pageContent {
+  width: 100%;
+  padding: 9.6rem 70.07rem 9.6rem 20rem;
+}
+.pageContent h3 {
+  font-size: 4.8rem;
+  text-align: center;
+  margin-bottom: 2.4rem;
+}
+.pageContent p {
+  font-size: 2rem;
+  margin-left: 2.8rem;
+  margin-bottom: 2.4rem;
+  line-height: 1.5;
+}
+.pageContent h6 {
+  font-size: 2rem;
+}
+.pageContent a {
+  text-decoration: none;
+  color: currentColor;
+  transition: all 0.3s;
+  font-weight: 600;
+  border-bottom: 1px solid currentColor;
+  z-index: 10000000;
+}
+.pageContent a:hover {
+  color: #000033b6;
+}
+
+/********** 1680px **********/
+@media (max-width: 105em) {
+  .pageContent {
+    padding: 9.6rem 65rem 9.6rem 20rem;
+  }
+}
+
+/********** 1600px **********/
+@media (max-width: 100em) {
+  .pageContent {
+    padding: 9.6rem 60rem 9.6rem 20rem;
+  }
+}
+
+/********** 1600px **********/
+@media (max-width: 75rem) {
+  .pageContent {
+    padding: 9.6rem 56rem 9.6rem 16rem;
+  }
+}
+
+/********** 1100px **********/
+@media (max-width: 68.75rem) {
+  .pageContent {
+    padding: 9.6rem 50rem 9.6rem 14rem;
+  }
+}
+
+/********** 1000px **********/
+@media (max-width: 62.5rem) {
+  .pageContent {
+    padding: 9.6rem 44rem 9.6rem 12rem;
+  }
+}
+
+/********** 850px **********/
+@media (max-width: 62.5rem) {
+  .pageContent {
+    padding: 8rem 42rem 9.6rem 12rem;
+  }
+}
+
+/********** 780px **********/
+@media (max-width: 62.5rem) {
+  .pageContent {
+    padding: 8rem 38rem 9.6rem 10rem;
+  }
+}
+
+/********** 700px **********/
+@media (max-width: 43.75rem) {
+  .pageContent {
+    padding: 8rem 34rem 8rem 10rem;
+  }
+}
+
+/********** 620px **********/
+@media (max-width: 38.75rem) {
+  .pageContent {
+    padding: 8rem 32rem 8rem 10rem;
+  }
+}
+
+/********** 560px **********/
+@media (max-width: 35rem) {
+  .pageContent {
+    padding: 8rem 27rem 8rem 10rem;
+  }
+}
+
+/********** 470px **********/
+@media (max-width: 29.375rem) {
+  .pageContent {
+    padding: 8rem 24rem 8rem 10rem;
+  }
+}
+
+/********** 450px **********/
+@media (max-width: 28.125rem) {
+  .pageContent {
+    padding: 8rem 20rem 8rem 10rem;
+  }
+}

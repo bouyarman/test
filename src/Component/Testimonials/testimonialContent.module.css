@@ -1,0 +1,240 @@
+.testimonialContent h3 {
+  font-size: 3.2rem;
+  font-weight: 600;
+  margin-bottom: 0.8rem;
+}
+
+.testimonialContent p {
+  font-size: 1.8rem;
+  margin-right: 2rem;
+}
+.testimonialBox {
+  width: 80%;
+  display: flex;
+  gap: 4.8rem;
+  margin: 3.2rem auto;
+  box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.1);
+  padding: 9.6rem 16rem;
+  border-radius: 10px;
+  border: 2px solid #000033;
+  position: relative;
+  overflow: hidden;
+}
+
+.testimonialBox:before,
+.testimonialBox:after {
+  position: absolute;
+  content: "";
+  width: 1.6rem;
+  height: 22rem;
+  background-image: linear-gradient(45deg, #000033, #3f3f96);
+  border-radius: 100px;
+  z-index: 100;
+  transform: rotate(-45deg);
+}
+.testimonialBox::after {
+  top: -10%;
+  left: 99%;
+}
+.testimonialBox::before {
+  top: -10%;
+  left: 94%;
+}
+.testimonialInfos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.testimonialInfos img {
+  width: 18rem;
+  height: 18rem;
+  border-radius: 50%;
+  margin-bottom: 2.4rem;
+  border: 2px solid #000033;
+}
+.testimonialInfos p:nth-child(2) {
+  font-size: 1.8rem;
+  font-weight: 500;
+  margin-bottom: 0.4rem;
+}
+.testimonialInfos p:nth-child(3) {
+  font-size: 1.8rem;
+  font-weight: 700;
+  width: 110%;
+}
+
+.testimonialBox ion-icon {
+  color: #000033;
+  width: 4.4rem;
+  height: 4.4rem;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.testimonialBox ion-icon:hover {
+  color: #000033da;
+}
+
+.leftBtn {
+  position: absolute;
+  left: 1%;
+  top: 50%;
+  transform: translate(-1%, -50%);
+  background: none;
+  border: none;
+}
+.rightBtn {
+  position: absolute;
+  left: 99%;
+  top: 50%;
+  transform: translate(-99%, -50%);
+  background: none;
+  border: none;
+}
+
+.dots ion-icon {
+  width: 2rem;
+  height: 2rem;
+  fill: white;
+  transition: all 0.3s;
+}
+
+.dots ion-icon:hover {
+  fill: #000033;
+}
+.dots {
+  position: absolute;
+  top: 95%;
+  left: 50%;
+  transform: translate(-50%, -95%);
+  display: flex;
+  gap: 0.8rem;
+}
+
+/********** 730px **********/
+@media (max-width: 45.625em) {
+  .testimonialBox {
+    width: 90%;
+    gap: 6.4rem;
+    margin: 2.4rem auto;
+    padding: 8rem 12rem;
+  }
+}
+
+/********** 600px **********/
+@media (max-width: 37.5rem) {
+  .testimonialBox {
+    padding: 6rem 9.6rem;
+  }
+  .testimonialBox::after {
+    top: -14%;
+    left: 98%;
+  }
+  .testimonialBox::before {
+    top: -14%;
+    left: 92%;
+  }
+}
+
+/********** 454px **********/
+@media (max-width: 28.375em) {
+  .testimonialBox {
+    padding: 5.6rem 8rem;
+  }
+  .testimonialBox::after {
+    top: -18%;
+    left: 98%;
+  }
+  .testimonialBox::before {
+    top: -18%;
+    left: 92%;
+  }
+}
+
+/********** 450px **********/
+@media (max-width: 28.125em) {
+  .testimonialInfos img {
+    width: 15rem;
+    height: 15rem;
+  }
+  .testimonialBox {
+    padding: 4rem 6rem;
+  }
+  .testimonialInfos p:nth-child(2) {
+    margin-bottom: 0.4em;
+    width: 130%;
+    text-align: center;
+  }
+  .testimonialInfos p:nth-child(3) {
+    font-size: 1.8rem;
+    font-weight: 700;
+    text-align: center;
+    width: 130%;
+  }
+  .testimonialBox:before,
+  .testimonialBox:after {
+    width: 1.2rem;
+  }
+  .testimonialBox::after {
+    top: -22%;
+    left: 98%;
+  }
+  .testimonialBox::before {
+    top: -24%;
+    left: 92%;
+  }
+}
+
+/********** 430px **********/
+@media (max-width: 26.875em) {
+  .testimonialBox {
+    padding: 3rem 5rem 3rem 5rem;
+  }
+  .testimonialInfos img {
+    width: 14rem;
+    height: 14rem;
+  }
+  .testimonialInfos p:nth-child(3) {
+    font-size: 1.8rem;
+    font-weight: 700;
+    width: 140%;
+  }
+  .dots {
+    top: 97%;
+    left: 50%;
+    transform: translate(-50%, -97%);
+    gap: 0.4rem;
+  }
+  .testimonialBox:before,
+  .testimonialBox:after {
+    width: 1.2rem;
+  }
+  .testimonialBox::after {
+    top: -22%;
+    left: 98%;
+  }
+  .testimonialBox::before {
+    top: -24%;
+    left: 92%;
+  }
+}
+
+/********** 400px **********/
+@media (max-width: 25em) {
+  .testimonialBox {
+    padding: 4rem 8rem 4rem 8rem;
+  }
+}
+/********** 360px **********/
+@media (max-width: 22.5em) {
+  .testimonialBox {
+    padding: 4rem 6rem 4rem 6rem;
+  }
+}
+/********** 330px **********/
+@media (max-width: 20.625em) {
+  .testimonialBox {
+    padding: 3rem 5rem 3rem 5rem;
+  }
+}

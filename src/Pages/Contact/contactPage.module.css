@@ -1,0 +1,215 @@
+.contactSec {
+  width: 130rem;
+  margin: 9.6rem auto;
+  align-items: center;
+  justify-content: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+
+  padding: 6.4rem;
+  box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  border: 2px solid #000033;
+}
+.form button {
+  margin: 0 auto;
+  width: 30%;
+  margin-top: 3.2rem;
+  background: none;
+  border: none;
+  background-color: #000033;
+  padding: 1.4rem 2.8rem;
+  font-size: 2rem;
+  color: white;
+  border: 1px solid #000033;
+  border-radius: 10rem;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.form div:nth-child(5) {
+  justify-content: center;
+}
+
+.form button:hover {
+  background: transparent;
+  backdrop-filter: blur(2px);
+  color: #000033;
+}
+
+.form h3 {
+  font-size: 2.4rem;
+  margin-bottom: 2.4rem;
+}
+.form label {
+  font-size: 1.8rem;
+}
+.form select {
+  height: 3.2rem;
+  width: 100%;
+  border: 2px solid #000033;
+  border-radius: 10px;
+  font-size: 1.6rem;
+}
+.messageInput,
+.errorInput {
+  height: 3.2rem;
+  width: 100%;
+  border-radius: 10px;
+  font-size: 1.6rem;
+}
+.messageInput {
+  border: 2px solid #000033;
+}
+.errorInput {
+  border: 2px solid #ff0000;
+}
+
+.form div {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 1.2rem;
+  margin-bottom: 1.2rem;
+}
+.form div textarea {
+  height: 10rem;
+}
+
+.contactInfo {
+  font-size: 2.4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 9.6rem;
+}
+.contactInfo ion-icon {
+  color: #000033;
+  font-size: 3.8rem;
+}
+.contactInfo a {
+  text-decoration: none;
+  color: #000033;
+  display: flex;
+  gap: 2rem;
+  padding-bottom: 1.2rem;
+  border-bottom: 1px solid #000033;
+  transition: all 0.3s;
+}
+.contactInfo a:hover {
+  transform: scale(1.025);
+  color: #000033cb;
+}
+
+.form input:invalid[blured="true"] ~ .errorMessage,
+.textareaTextError {
+  display: block;
+  margin-top: 0.6rem;
+  grid-column: 2/3;
+  grid-row: 2/3;
+  font-size: 1.4rem;
+  color: #ff0000;
+  font-weight: 500;
+}
+.hidden,
+.errorMessage {
+  display: none;
+}
+
+.form input {
+  height: 3.2rem;
+  width: 100%;
+  border-radius: 10px;
+  font-size: 1.6rem;
+}
+.form input {
+  border: 2px solid #000033;
+}
+.form input:invalid[blured="true"] {
+  border: 2px solid #ff0000;
+}
+.form {
+  position: relative;
+  overflow: hidden;
+}
+.form:before,
+.form:after {
+  position: absolute;
+  content: "";
+  width: 1.6rem;
+  height: 22rem;
+  background-image: linear-gradient(45deg, #000033, #3f3f96);
+  border-radius: 100px;
+  z-index: 100;
+  transform: rotate(-45deg);
+}
+.form::after {
+  top: -10%;
+  left: 96%;
+}
+.form::before {
+  top: -10%;
+  left: 88%;
+}
+
+/********** 1100px **********/
+@media (max-width: 68.75em) {
+  .contactSec {
+    width: 100%;
+    margin: 9.6rem 2.4rem;
+  }
+}
+/********** 1000px **********/
+@media (max-width: 62.5em) {
+  .form button {
+    margin-top: 1.6rem;
+  }
+  .form {
+    gap: 1.2rem;
+  }
+  .contactInfo a {
+    gap: 1.2rem;
+    padding-bottom: 0.8rem;
+  }
+}
+
+/********** 830px **********/
+@media (max-width: 51.875em) {
+  .form {
+    padding: 4.8rem;
+  }
+  .contactInfo {
+    padding: 6.4rem;
+  }
+  .form::after,
+  .form::before {
+    top: -15%;
+  }
+}
+
+/********** 700px **********/
+@media (max-width: 43.75rem) {
+  .contactSec {
+    width: 70%;
+    margin: 9.6rem auto 3.2rem auto;
+  }
+  .contactSec {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+  .contactInfo {
+    padding: 6.4rem;
+  }
+  .form::after {
+    top: -8%;
+    left: 100%;
+  }
+  .form::before {
+    top: -8%;
+    left: 92%;
+  }
+}

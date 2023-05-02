@@ -1,0 +1,39 @@
+.icons ion-icon {
+  color: #000033;
+  font-size: 4rem;
+  margin-top: 1.6rem;
+}
+.visitBox {
+  display: flex;
+  gap: 1.6rem;
+  padding: 4rem 2rem;
+  border-radius: 10px;
+  box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+
+.visitBox:hover {
+  transform: scale(1.05);
+}
+.visitBox p {
+  font-size: 1.8rem;
+}
+.visitBox h3 {
+  font-size: 2rem;
+  margin-bottom: 0.6rem;
+  font-weight: 600;
+}
+
+/********** 690px **********/
+@media (max-width: 45.625em) {
+  .visitBox {
+    padding: 3.2rem 1.6rem;
+  }
+}
+
+/********** 600px **********/
+@media (max-width: 37.5rem) {
+  .visitBox {
+    padding: 2.4rem 1.2rem;
+  }
+}

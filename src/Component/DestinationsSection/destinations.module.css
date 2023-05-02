@@ -1,0 +1,41 @@
+.places {
+  margin: 2.4rem auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  justify-content: center;
+  row-gap: 3rem;
+}
+
+/********** 700px **********/
+@media (max-width: 43.75rem) {
+  .places {
+    margin: 0.6rem auto;
+    row-gap: 1.2rem;
+  }
+}
+
+/********** 545px **********/
+@media (max-width: 34.0625em) {
+  .places {
+    margin: 0.6rem auto;
+    row-gap: 0rem;
+  }
+}
+
+/********** 450px **********/
+@media (max-width: 28.125em) {
+  .places {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    margin: 3.6rem auto;
+  }
+}
+
+/********** 400px **********/
+@media (max-width: 25em) {
+  .places {
+    margin: 1.2rem auto;
+  }
+}

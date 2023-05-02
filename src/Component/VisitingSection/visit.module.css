@@ -1,0 +1,32 @@
+.visitContent {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 4rem;
+  row-gap: 4rem;
+  margin: 4.8rem auto;
+}
+
+/********** 1200px **********/
+@media (max-width: 75em) {
+  .visitContent {
+    width: 85%;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/********** 730px **********/
+@media (max-width: 45.625em) {
+  .visitContent {
+    width: 90%;
+    gap: 3.2rem;
+    margin: 2.4rem auto 3.6rem auto;
+  }
+}
+
+/********** 600px **********/
+@media (max-width: 37.5em) {
+  .visitContent {
+    width: 95%;
+    gap: 2.4rem;
+  }
+}

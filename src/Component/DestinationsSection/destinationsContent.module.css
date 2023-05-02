@@ -1,0 +1,96 @@
+.placesImgs {
+  position: relative;
+  width: 80%;
+  height: 35rem;
+  justify-self: center;
+  align-self: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.placesImgs img {
+  border-radius: 10px;
+}
+.placesText {
+  width: 80%;
+  justify-self: center;
+}
+.placesText p {
+  font-size: 2rem;
+}
+.north-morr-imgs {
+  grid-column: 2/3;
+  grid-row: 1/2;
+}
+.north-morr-text {
+  grid-column: 1/2;
+  grid-row: 1/2;
+}
+.middle-morr-imgs {
+  grid-column: 1/2;
+  grid-row: 2/3;
+}
+.middle-morr-text {
+  grid-column: 2/3;
+  grid-row: 2/3;
+}
+.west-morr-imgs {
+  grid-column: 2/3;
+  grid-row: 3/4;
+}
+.west-morr-text {
+  grid-column: 1/2;
+  grid-row: 3/4;
+}
+.south-morr-imgs {
+  grid-column: 1/2;
+  grid-row: 4/5;
+}
+.south-morr-text {
+  grid-column: 2/3;
+  grid-row: 4/5;
+}
+
+/********** 730px **********/
+@media (max-width: 45.625em) {
+  .placesText {
+    width: 90%;
+  }
+  .placesImgs {
+    width: 90%;
+    height: 40rem;
+  }
+}
+
+/********** 690px **********/
+@media (max-width: 45.625em) {
+  .placesText {
+    width: 92%;
+    justify-self: center;
+  }
+}
+/********** 545px **********/
+@media (max-width: 34.0625em) {
+  .placesText {
+    width: 95%;
+  }
+  .placesImgs {
+    width: 95%;
+    height: 35rem;
+  }
+}
+
+/********** 450px **********/
+@media (max-width: 28.125em) {
+  .placesImgs {
+    width: 65%;
+    height: 38rem;
+  }
+  .placesText {
+    border-top: 1px solid #00003f;
+    padding-top: 2rem;
+  }
+  .placesText:nth-child(1) {
+    border-top: none;
+  }
+}

@@ -1,0 +1,37 @@
+.logo {
+  font-size: 4rem;
+  font-family: "Delicious Handrawn", cursive;
+  margin: 0;
+  color: white;
+  text-decoration: none;
+  font-weight: 700;
+  text-shadow: -1px 1px 2px #000;
+}
+
+/********** 1680px **********/
+@media (max-width: 105em) {
+  .logo {
+    font-size: 3.6rem;
+  }
+}
+
+/********** 1500px **********/
+@media (max-width: 93.75) {
+  .logo {
+    font-size: 4rem;
+  }
+}
+
+/********** 1100px **********/
+@media (max-width: 68.75em) {
+  .logo {
+    font-size: 3.6rem;
+  }
+}
+
+/********** 1000px **********/
+@media (max-width: 62.5em) {
+  .logo {
+    font-size: 4.8rem;
+  }
+}
